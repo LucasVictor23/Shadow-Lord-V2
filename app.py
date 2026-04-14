@@ -3,6 +3,17 @@ import os
 import sqlite3
 from modules.sheet_player import renderizar_hud
 
+# No topo do arquivo, adicione:
+from modules.dice_roller import rolar_dado_nexus
+
+# No meio do arquivo, atualize a linha das abas:
+tab1, tab2, tab3 = st.tabs(["📊 STATUS", "🛠️ TRANSMIGRAR", "🎲 DADOS"])
+
+# No final do arquivo, adicione:
+with tab3:
+    rolar_dado_nexus()
+
+
 # Caminho do Banco na Nuvem
 DB_PATH = "database/nexus_v2.db"
 
