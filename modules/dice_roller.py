@@ -1,3 +1,9 @@
+#Implementar Console de Dados Nexus com Multi-Dados e Regras 3D&T
+#Adição do sistema de rolagem para D4, D6, D8, D10, D12, D20 e D100. 
+#Inclui lógica de 'Destino Selado' (+/- 7), cálculo automático de crítico para 3D&T (6 vira 12) 
+#e correção de persistência na soma dos resultados.
+
+
 import streamlit as st
 import random
 import time
